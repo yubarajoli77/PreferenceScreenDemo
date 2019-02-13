@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_rootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
+    <TextView
+        android:id="@+id/tv_demo_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="18sp"
+        android:padding="4dp"
+        android:textColor="#030303"
+        android:text="This release provides you with APIs to make sharing intuitive and quick for users. You can now define direct share targets that launch a specific activity in your app. These direct share targets are exposed to users via the Share menu. This feature allows users to share content to targets, such as contacts, within other apps. For example, the direct share target might launch an activity in another social network app, which lets the user share content directly to a specific friend or community in that app.
+
+To enable direct share targets you must define a class that extends the ChooserTargetService class. Declare your service in the manifest. Within that declaration, specify the BIND_CHOOSER_TARGET_SERVICE permission and an intent filter using the SERVICE_INTERFACE action.
+
+The following example shows how you might declare the ChooserTargetService in your manifest."/>
+</ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
